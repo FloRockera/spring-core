@@ -14,8 +14,12 @@ public class UserInteraction {
 	@Autowired
 	private IFeedback feedback;
 
+	@Autowired
 	public void setFeedback(IFeedback feedback) {
 		this.feedback = feedback;
+	}
+
+	public UserInteraction() {
 	}
 
 	// Pour dire bonjour � l'utilisateur

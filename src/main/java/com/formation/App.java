@@ -1,9 +1,7 @@
 package com.formation;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.formation.user.UserInteraction;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
  * Hello world!
@@ -11,13 +9,12 @@ import com.formation.user.UserInteraction;
  */
 public class App {
 	public static void main(String[] args) {
+
 		System.out.println("Hello World!");
 
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:/applicationContext.xml");
+		String name = "Flo";
 
-		UserInteraction ui = applicationContext.getBean(UserInteraction.class);
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 
-		ui.sayHello("Dudule");
-		ui.sayGoodBye("Dudule");
 	}
 }
