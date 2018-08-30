@@ -2,11 +2,16 @@ package com.formation.user;
 
 import java.text.MessageFormat;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import com.formation.service.IFeedback;
 
 //Classe pour r�aliser les int�ractions avec les utilisateurs
+@Component
 public class UserInteraction {
 
+	@Autowired
 	private IFeedback feedback;
 
 	public void setFeedback(IFeedback feedback) {
