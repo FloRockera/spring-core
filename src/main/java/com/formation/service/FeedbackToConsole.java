@@ -10,4 +10,22 @@ public class FeedbackToConsole implements IFeedback {
 		System.out.println(something);
 	}
 
+	@Override
+	public void unsay(String format) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void amend(String format) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void tellMeAll(String format) {
+		// TODO Auto-generated method stub
+
+	}
+
 }
